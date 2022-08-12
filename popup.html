@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Get Meaning</title>
+    <style>
+      html,
+      body {
+        margin: 0px;
+        padding: 0;
+        width: 384px;
+      }
+      #joke {
+        font-family: "Comic Neue", cursive;
+        font-weight: bolder;
+      }
+      .container {
+        padding: 10px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px 0px black;
+      }
+      button {
+        color: whitesmoke;
+        font-size: larger;
+        font-weight: bold;
+        border: none;
+        background-image: linear-gradient(
+          30deg,
+          rgb(10, 146, 236),
+          rgb(11, 219, 246)
+        );
+        border-radius: 30px;
+        padding: 8px 40px;
+      }
+      button:hover {
+        background-image: linear-gradient(
+          30deg,
+          rgb(11, 219, 246),
+          rgb(10, 146, 236)
+        );
+        cursor: pointer;
+      }
+      button:active {
+        background-image: linear-gradient(
+          30deg,
+          rgb(11, 219, 246),
+          rgb(10, 146, 236)
+        );
+        transform: translateY(4px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input id="word" type="text" />
+      <button id="button">Next</button>
+      <p id="display"></p>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "Get Meaning",
+  "description": "Get's the meaning of selected text",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": { "128": "mg128.png", "16": "mg16.png", "19": "mg19.png" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": { "19": "mg19.png" }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["activeTab", "scripting", "contextMenus", "notifications"]
+}
